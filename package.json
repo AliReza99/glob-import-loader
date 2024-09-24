@@ -1,9 +1,10 @@
 {
-  "name": "glob-import-loader",
-  "version": "2.0.0",
+  "name": "@arazor1911/glob-import-loader",
+  "private": false,
+  "version": "1.0.0",
   "description": "",
   "author": "Alireza Bahrani",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "types": "dist/index.d.ts",
   "files": [
@@ -14,17 +15,23 @@
     "lint:prettier": "prettier --check --cache ./src/**/*.{js,jsx,ts,tsx}",
     "prettify": "prettier --write --cache ./src/**/*.{js,jsx,ts,tsx}",
     "lint": "tsc --noEmit && eslint --cache --cache-location ./node_modules/.cache/eslint/ --quiet --ext .js,.jsx,.ts,.tsx,.mjs src",
+    "prebuild": "rimraf dist",
     "build": "tsc",
-    "do-link": "npm link"
+    "do-link": "npm link",
+    "release:patch": "npm version patch",
+    "release:major": "npm version major",
+    "release:private": "npm publish --access=restricted",
+    "release:public": "npm publish --access=public"
   },
   "dependencies": {
     "glob": "^8.0.3"
   },
   "devDependencies": {
-    "typescript": "^5.6.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.48.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.2"
   }
 }
