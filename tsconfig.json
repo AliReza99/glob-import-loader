@@ -8,7 +8,8 @@
     "outDir": "./dist", // Output directory for compiled files
     "moduleResolution": "node",
     "esModuleInterop": true, // Ensures ES module compatibility
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowJs": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"],
