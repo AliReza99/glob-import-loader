@@ -1,7 +1,7 @@
 {
   "name": "@arbz/glob-import-loader",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Webpack loader that enables glob imports, allowing you to dynamically import multiple files matching a glob pattern with their relative paths.",
   "author": "Alireza Bahrani",
   "repository": "https://github.com/AliReza99/glob-import-loader.git",
